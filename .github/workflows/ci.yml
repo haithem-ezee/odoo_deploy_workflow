@@ -51,7 +51,10 @@ jobs:
         run: docker-compose up -d odoo
 
       - name: docker list
-        run: docker ps
+        run: |
+          docker ps
+          sleep 3600
+
 #      - name: Execute Tests
 #        run: docker-compose run --rm test
 
