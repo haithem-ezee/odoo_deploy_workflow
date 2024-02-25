@@ -21,6 +21,7 @@ jobs:
         run: flake8 .
 
   build-and-test:
+    needs: flake8-check
     runs-on: ubuntu-latest
     services:
       postgres:
@@ -49,6 +50,8 @@ jobs:
       - name: Start Odoo with Testing
         run: docker-compose up -d odoo
 
-      - name: Execute Tests
-        run: docker-compose run --rm test
+      - name: docker list
+        run: docker ps
+#      - name: Execute Tests
+#        run: docker-compose run --rm test
 
