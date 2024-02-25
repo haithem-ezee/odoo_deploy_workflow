@@ -15,7 +15,7 @@ RUN mkdir -p /mnt/extra-addons
 RUN git clone https://github.com/haithem-ezee/module_test.git /mnt/extra-addons
 
 #afficher dossier
-RUN cd /mnt/extra-addons
+# RUN cd /mnt/extra-addons
 
 # ------------------afficher  liste  module-----------
 Run ls /mnt/extra-addons

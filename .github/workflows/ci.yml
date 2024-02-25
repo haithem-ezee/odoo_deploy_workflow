@@ -48,6 +48,7 @@ jobs:
           echo "PostgreSQL is running on port 5432"
       - name: Start Odoo with Testing
         run: docker-compose up -d odoo
+
       - name: Execute Tests
         run: docker-compose run --rm test
 
