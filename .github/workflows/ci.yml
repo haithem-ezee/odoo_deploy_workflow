@@ -55,6 +55,6 @@ jobs:
           docker ps
           sleep 3600
 
-#      - name: Execute Tests
+#      - name: Execute Test
 #        run: docker-compose run --rm test
 
