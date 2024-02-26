@@ -21,7 +21,7 @@ jobs:
         run: flake8 .
 
   build-and-test:
-    needs: flake8-check # dependence  of preview  step
+    needs: flake8-check # dependence  of preview  step git
     runs-on: self-hosted
     services:
       postgres:
